@@ -1,7 +1,7 @@
 name: event_db_tester
-description: A starting point for Dart libraries or applications.
+description: Provides a testing utility for event_db. Mainly through genericModelTest
 version: 0.1.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/VHCBlade/event_db_tester
 
 environment:
   sdk: ^3.0.2
