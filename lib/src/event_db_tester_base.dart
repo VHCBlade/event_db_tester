@@ -18,7 +18,7 @@ void genericModelTest({
   SerializableListTester<Tuple2<GenericModel, GenericModel Function()>>(
     testGroupName: testGroupName,
     mainTestName: mainTestName,
-    mode: ListTesterMode.auto,
+    mode: ListTesterMode.noOutput,
     testFunction: (value, tester) async {
       final item = value.item1;
       final itemCopy = value.item2()..copy(item);
