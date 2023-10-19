@@ -4,18 +4,18 @@ import 'package:test/expect.dart';
 import 'package:tuple/tuple.dart';
 
 /// Runs a test that makes sure that the provided [models] are able to keep all
-/// of the data through the [GenericModel.copy] and serailization
+/// of the data through the [BaseModelFieldExtension.copy] and serailization
 /// ([JsonStringModel.toJsonString]) methods.
 ///
 /// [testGroupName] and [mainTestName] can be specified to change the generated
 /// folders for the test.
 void genericModelTest({
-  required Map<String, Tuple2<GenericModel, GenericModel Function()> Function()>
+  required Map<String, Tuple2<BaseModel, BaseModel Function()> Function()>
       models,
   String testGroupName = 'Models',
   String mainTestName = 'copy',
 }) {
-  SerializableListTester<Tuple2<GenericModel, GenericModel Function()>>(
+  SerializableListTester<Tuple2<BaseModel, BaseModel Function()>>(
     testGroupName: testGroupName,
     mainTestName: mainTestName,
     mode: ListTesterMode.noOutput,
